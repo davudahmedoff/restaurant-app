@@ -1,0 +1,570 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: black;
+}
+.header {
+  max-width: 96%;
+  height: 7rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  margin: 1rem auto;
+  /* position:fixed;
+    top:0;
+    left:50%; */
+  z-index: 1;
+}
+.logo {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: "Allura", cursive;
+  padding-right: 1rem;
+}
+.logo__span {
+  font-size: 1rem;
+  display: block;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.header__ul {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.4rem;
+  list-style-type: none;
+  font-family: "Times ", sans-serif;
+  text-transform: uppercase;
+}
+.header__ul > li {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  cursor: pointer;
+  transition: all, 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__ul > li:hover:not(:last-child) {
+  border-bottom: 2px solid black;
+  /* transform: translateY(59%); */
+}
+.header__ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+.btn-rezervation {
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3.2rem;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: white;
+}
+.btn-rezervation:hover {
+  background-color: rgb(222, 12, 12);
+  border: none;
+}
+.video {
+  max-width: 100%;
+  height: 80vh;
+  margin: 4rem 1rem;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.content > h1 {
+  font-family: "Allura", cursive;
+  font-size: 6rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.black {
+  max-width: 100%;
+  height: 20vh;
+  background-color: black;
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  /* display:flex;
+   flex-direction:column; */
+  font-size: 2rem;
+  padding: 4rem;
+  text-align: center;
+}
+.black > p {
+  text-align: center;
+}
+.information {
+  font-size: 2.5rem;
+  width: 14rem;
+  height: 4rem;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}
+.information:hover {
+  background-color: white;
+  color: black;
+}
+.body {
+  max-width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  color: black;
+}
+.img {
+  border-top: 2.8rem solid black;
+  width: 60rem;
+  height: 65rem;
+}
+.img-2 {
+  border-bottom: 2.8rem solid black;
+  width: 60rem;
+  height: 65rem;
+}
+.table {
+  font-size: 2rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 50rem;
+  height: 26rem;
+  text-align: left;
+  padding-left: 1.5rem;
+  border: 2px solid black;
+}
+.table-2 {
+  font-size: 2rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 50rem;
+  height: 22rem;
+  text-align: left;
+  padding-left: 1.5rem;
+  border: 2px solid black;
+}
+.table > h2 {
+  font-family: "Allura", cursive;
+}
+.table-2 > h2 {
+  font-family: "Allura", cursive;
+}
+.table > p {
+  color: rgb(94, 73, 73);
+}
+.btn-branch {
+  font-size: 1.8rem;
+  width: 13rem;
+  height: 3.3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  border: none;
+  cursor: pointer;
+  margin-left: 2rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+}
+.btn-branch:hover {
+  background-color: rgb(222, 12, 12);
+}
+.press {
+  max-width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.press-header {
+  font-size: 2.5rem;
+  font-family: "Allura", cursive;
+}
+.press-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+.press-link {
+  width: 28rem;
+  height: 4rem;
+  background-color: white;
+  font-size: 2.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Abel", sans-serif;
+}
+.rezerv {
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rezerv-img {
+  width: 150rem;
+  height: 70rem;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.rezerv-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(119, 83, 116, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.rezerv-content > h3 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Allura", cursive;
+}
+.footer {
+  max-width: 96%;
+  height: 7rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  margin: 1rem auto;
+}
+.footer > .footer__ul {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.8rem;
+  list-style-type: none;
+  font-family: "Times ", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.footer__ul > li > a {
+  color: black;
+}
+.page-about {
+  max-width: 100%;
+  height: 65vh;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 10rem;
+}
+.about-img {
+  max-width: 90%;
+  height: 65vh;
+  text-align: center;
+  margin-left: 7.5rem;
+}
+.text-h {
+  max-width: 70rem;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: "Allura", cursive;
+  margin-top: -6rem;
+  margin-left: 7.5rem;
+  background-color: white;
+  z-index: 1;
+}
+.text-container {
+  max-width: 100%;
+  height: 30vh;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.text {
+  width: 49rem;
+  height: 20vh;
+  color: #414042;
+  text-align-last: center;
+}
+.table-body {
+  font-size: 2rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 66rem;
+  height: 33rem;
+  text-align: left;
+  padding-left: 1.5rem;
+  border: 2px solid #414042;
+  text-align: center;
+  color: #414042;
+  padding: 3rem;
+}
+.team-div {
+  max-width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.team-text {
+  max-width: inherit;
+  height: 10vh;
+  text-align: center;
+  font-family: "Allura", cursive;
+  font-size: 2.5rem;
+}
+.team-content {
+  max-width: inherit;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 5rem;
+}
+.content-photo {
+  width: 24rem;
+  height: 26rem;
+  position: relative;
+}
+.content-photo > img {
+  width: inherit;
+  height: inherit;
+}
+.content-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.team-info {
+  padding: none;
+  border-top: 0;
+  text-transform: uppercase;
+}
+.team-info > h6 {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  font-family: "Abel", sans-serif;
+}
+.team-info > p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #414042;
+}
+.content-flex:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.6s;
+}
+.contact {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-text {
+  max-width: 20%;
+  height: 30vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-text > h1 {
+  font-size: 5rem;
+  font-family: "Allura", cursive;
+  color: #414042;
+}
+.contact-text > p {
+  color: #414042;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.form {
+  width: 30%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+input {
+  width: 55rem;
+  height: 4rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: grey;
+  border: 1px solid grey;
+  padding-left: 1rem;
+}
+.span {
+  color: grey;
+}
+.select-div {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+select {
+  width: 56rem;
+  height: 4.5rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  border: 1px solid grey;
+  padding-left: 1rem;
+}
+option {
+  height: 3rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+textarea {
+  height: 15rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding-left: 1rem;
+}
+.galery {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.galery__header {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  color: #414042;
+}
+.galery__items {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11.5rem;
+  margin: auto;
+  padding: 10rem;
+}
+.galery-item {
+  width: 30rem;
+  height: 32rem;
+  background-color: #414042;
+  cursor: pointer;
+  position: relative;
+}
+.galery-item-effect{
+  position: absolute;
+  bottom: 0;
+  width: 30rem;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all .5s;
+}
+
+.galery-item:hover >.galery-item-effect{
+  height: 32rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.rezer-page{
+  max-width: 100%;
+  height: 99.8vh;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rezerv-div{
+
+  width: 40%;
+  height: 60vh;
+  display: flex;
+ 
+ align-items: center;
+  flex-direction: column;
+}
+.rezerv-div>h2{
+  font-family: "Allura", cursive;
+  color: #414042;
+  font-size: 3rem;
+}
+.close{
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  font-size: 5rem;
+  color:rgb(193, 179, 179);
+  cursor: pointer;
+  border: none;
+}
+.close :active{
+ color: grey;
+}
+.rezerv-form{
+  width: 75%;
+  height: 80%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+}
+
+
+
+
